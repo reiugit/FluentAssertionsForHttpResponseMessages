@@ -1,14 +1,12 @@
 # FluentAssertions for 'HttpResponseMessages'
 
-1. Only with 'FluentAssertions'
-
+1. Only with 'FluentAssertions':
 <pre>
-    ok.StatusCode.Should().Be(HttpStatusCode.OK);  // 200
-    ok.IsSuccessStatusCode.Should().BeTrue();      // 2xx
+ok.StatusCode.Should().Be(HttpStatusCode.OK);  // 200
+ok.IsSuccessStatusCode.Should().BeTrue();      // 2xx
 </pre>
 
-2. Extended with 'HttpResponseMessageAssertions'
-
+2. Extended with 'HttpResponseMessageAssertions':
 <pre>
     ok.Should().HaveStatusCode(HttpStatusCode.OK);  // 200
     created.Should().BeSuccessful();                // 2xx
